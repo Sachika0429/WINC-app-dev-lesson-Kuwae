@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WINC Taro | Identity Card</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>桑江 沙智花</h1>
+        <h1 id="username">桑江 沙智花</h1>
         <p>好奇心旺盛なフロントエンド学習者</p>
     </header>
 
@@ -26,9 +27,11 @@
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>HTML / CSS (学習中)</li>
-                <li>Python (基礎レベル)</li>
-                <li>VS Code / Git</li>
+                <div id="skills-list">
+                    <li>HTML / CSS (学習中)</li>
+                    <li>Python (基礎レベル)</li>
+                    <li>VS Code / Git</li>
+                </div>
             </ul>
         </section>
 
@@ -42,21 +45,27 @@
             </article>
             <article>
                 <h3>読書</h3>
-                <p>技術書から小説まで幅広く読みます。</p>
+                <p id="book">技術書から小説まで幅広く読みます。</p>
 
                 <h3>好きな食べ物</h3>
-                <ul>
-                    <li>うどん</li>
-                    <li>シチュー</li>
-                    <li>芋</li>
-                </ul>
+                
+                <div id="foods-list">
+                    <ul>
+                        <li>うどん</li>
+                        <li>シチュー</li>
+                        <li>芋</li>
+                    </ul>
+                </div>
 
                 <h3>今日やりたいこと</h3>
-                <ol>
-                    <li>買い物</li>
-                    <li>部屋の掃除</li>
-                    <li>ゴミ出し</li>
-                </ol>
+
+                <div id="todo-list">
+                    <ol>
+                        <li>買い物</li>
+                        <li>部屋の掃除</li>
+                        <li>ゴミ出し</li>
+                    </ol>
+                </div>
 
             </article>
         </section>
